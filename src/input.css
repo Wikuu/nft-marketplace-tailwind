@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* .test {
+    @apply bg-red-500;
+} */
+
+.wrapper {
+  overflow-x: hidden;
+}
+
+.menu-close {
+  right: -75%;
+}
+
+.menu-open {
+  right: 0;
+}
+
+.navbar {
+  @apply px-4 pt-8 pb-4 sm:bg-trans-white font-work-sans;
+}
+
+.mobile-right-side {
+  @apply grid-cols-1 flex justify-end items-center sm:flex lg:hidden;
+}
+
+.mobile-menu-content {
+  @apply absolute top-0 w-9/12 sm:w-1/2 h-screen bg-yellow flex justify-start items-center gap-1 flex-col px-2 py-4  ease-in-out duration-500;
+}
+
+.mobile-menu-link {
+  @apply w-full text-end p-2 text-purple font-bold;
+}
+
+.mobile-menu-special-link {
+  @apply w-full text-end p-2 border border-purple bg-purple text-yellow font-bold;
+}
+
+.desktop-navbar-content {
+  @apply grid-cols-1 hidden lg:flex lg:justify-end lg:items-center lg:gap-4 lg:tracking-wide lg:leading-4 lg:text-yellow;
+}
+
+.desktop-navbar-content-wallet-button {
+  @apply border border-yellow p-3 bg-slightly-trans-white hover:bg-yellow hover:text-purple ease-in-out duration-500;
+}
+
+.hero-section-title {
+  @apply text-5xl md:text-6xl text-white font-oxanium font-semibold text-center md:text-start xl:text-7xl md:leading-relaxed lg:leading-relaxed xl:leading-relaxed;
+}
+
+.hero-section-buttons-wrapper {
+  @apply flex justify-between md:justify-start align-middle mt-5;
+}
+
+.hero-section-explore-btn {
+  @apply bg-yellow border border-yellow text-purple font-work-sans font-semibold py-3 px-16 md:mr-6;
+}
+
+.hero-section-create-btn {
+  @apply bg-trans-white border border-yellow text-white font-work-sans font-semibold py-3 px-16;
+}

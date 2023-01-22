@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FontAwesome Pro CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@4cac1a6/css/all.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700&family=Work+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="/dist/output.css" />
+    <title>NFT Marketplace</title>
+  </head>
+  <body class="bg-purple">
+    <div class="wrapper relative h-screen w-full">
+      <!-- Navbar -->
+      <div class="navbar">
+        <div class="grid grid-cols-2 container mx-auto">
+          <div class="w-fit">
+            <a href="#">
+              <img src="./images/logo.png" alt="Logo" />
+            </a>
+          </div>
+          <!-- Desktop Navbar Content -->
+          <div class="desktop-navbar-content">
+            <a href="#" class="underline underline-offset-8">Explore</a>
+            <a href="#">Creators</a>
+            <a href="#">Community</a>
+            <a href="#" class="desktop-navbar-content-wallet-button"
+              >Connect Wallet</a
+            >
+          </div>
+          <!-- Mobile Sidebar -->
+          <div class="mobile-right-side">
+            <button class="text-end navbar-toggler">
+              <i class="fas fa-bars text-yellow text-xl"></i>
+            </button>
+
+            <div id="mobile-menu" class="mobile-menu-content menu-close">
+              <button class="text-end self-end navbar-toggler px-2">
+                <i class="fas fa-times text-purple text-xl"></i>
+              </button>
+              <a href="#" class="mobile-menu-link">Explore</a>
+              <a href="#" class="mobile-menu-link">Creators</a>
+              <a href="#" class="mobile-menu-link">Community</a>
+              <a href="#" class="mobile-menu-special-link">Connect Wallet</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Section -->
+      <div class="container mx-auto px-4 xl:px-0 mt-12">
+        <div class="grid grid-cols-2 gap-y-8">
+          <div class="col-span-2 lg:col-span-1">
+            <h1 class="hero-section-title">
+              Explore, Buy and Sell the
+              <span class="text-yellow">Best NFTs!</span>
+            </h1>
+
+            <div class="hero-section-buttons-wrapper">
+              <a href="#" class="hero-section-explore-btn">Explore</a>
+              <a href="#" class="hero-section-create-btn">Create</a>
+            </div>
+          </div>
+          <div class="col-span-2 lg:col-span-1">c2</div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <!-- jQuery -->
+  <script
+    src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+    crossorigin="anonymous"
+  ></script>
+  <!-- JS -->
+  <script src="./index.js"></script>
+</html>

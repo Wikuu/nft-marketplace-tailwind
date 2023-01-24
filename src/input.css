@@ -27,7 +27,7 @@
 }
 
 .mobile-menu-content {
-  @apply absolute top-0 w-9/12 sm:w-1/2 h-screen bg-yellow flex justify-start items-center gap-1 flex-col px-2 py-4  ease-in-out duration-500;
+  @apply absolute top-0 w-9/12 sm:w-1/2 h-screen bg-yellow flex justify-start items-center gap-1 flex-col px-2 py-4  ease-in-out duration-500 z-10;
 }
 
 .mobile-menu-link {
@@ -43,7 +43,7 @@
 }
 
 .desktop-navbar-content-wallet-button {
-  @apply border border-yellow p-3 bg-slightly-trans-white hover:bg-yellow hover:text-purple ease-in-out duration-500;
+  @apply border border-yellow p-3 bg-trans-white hover:bg-yellow hover:text-purple ease-in-out duration-500;
 }
 
 .hero-section-title {
@@ -55,9 +55,17 @@
 }
 
 .hero-section-explore-btn {
-  @apply bg-yellow border border-yellow text-purple font-work-sans font-semibold py-3 px-16 md:mr-6;
+  @apply bg-yellow border border-yellow text-purple font-work-sans font-semibold py-3 px-16 md:mr-6 hover:bg-purple hover:text-yellow ease-in-out duration-500;
 }
 
 .hero-section-create-btn {
-  @apply bg-trans-white border border-yellow text-white font-work-sans font-semibold py-3 px-16;
+  @apply bg-trans-white border border-yellow text-white font-work-sans font-semibold py-3 px-16 hover:bg-white hover:text-purple hover:border-white ease-in-out duration-500;
+}
+
+.hero-section-bid-info {
+  @apply absolute top-4 left-1/2 transform -translate-x-1/2 flex justify-around align-middle w-11/12 bg-slightly-trans-white shadow shadow-box-shadow-trans-white backdrop-blur-md font-oxanium font-semibold text-white py-3;
+}
+
+.hero-section-image-bid-button {
+  @apply bg-yellow text-purple border border-yellow px-10 font-bold text-lg font-work-sans hover:bg-purple hover:border-purple hover:text-yellow ease-in-out duration-500;
 }

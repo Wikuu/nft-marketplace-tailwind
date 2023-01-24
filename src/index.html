@@ -22,7 +22,7 @@
     <title>NFT Marketplace</title>
   </head>
   <body class="bg-purple">
-    <div class="wrapper relative h-screen w-full">
+    <div class="wrapper relative w-full">
       <!-- Navbar -->
       <div class="navbar">
         <div class="grid grid-cols-2 container mx-auto">
@@ -61,7 +61,7 @@
 
       <!-- Hero Section -->
       <div class="container mx-auto px-4 xl:px-0 mt-12">
-        <div class="grid grid-cols-2 gap-y-8">
+        <div class="grid grid-cols-2 gap-y-8 lg:gap-x-4 align-middle">
           <div class="col-span-2 lg:col-span-1">
             <h1 class="hero-section-title">
               Explore, Buy and Sell the
@@ -73,7 +73,54 @@
               <a href="#" class="hero-section-create-btn">Create</a>
             </div>
           </div>
-          <div class="col-span-2 lg:col-span-1">c2</div>
+          <div class="col-span-2 lg:col-span-1 relative">
+            <img
+              class="h-nft-art-height object-cover w-full"
+              src="./images/NftArt.jpg"
+              alt="NFT Art"
+            />
+            <div
+              class="bg-white flex justify-around align-middle p-4 font-oxanium"
+            >
+              <h4 class="text-xl font-bold">
+                Artist <br />
+                <span class="text-lg text-gray-400 font-medium">@wzard</span>
+              </h4>
+              <button class="hero-section-image-bid-button">Start Bid</button>
+            </div>
+            <div class="hero-section-bid-info">
+              <div>
+                <p class="text-lg">
+                  Current Bid <br /><span class="text-xl font-bold"
+                    >0.99 ETH</span
+                  >
+                </p>
+              </div>
+              <div>
+                <p class="text-lg">
+                  Ends in <br /><span class="text-xl font-bold">25 hrs</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Counter Section -->
+      <div class="container mx-auto px-4 xl:px-0 mt-16">
+        <div class="grid grid-cols-3 gap-4 align-middle text-center text-white">
+          <div class="col-span-1">
+            <h1 class="text-4xl font-oxanium font-bold">32k+</h1>
+            <p class="text-lg font-work-sans">Artworks</p>
+          </div>
+          <div class="col-span-1">
+            <h1 class="text-4xl font-oxanium font-bold">20k+</h1>
+            <p class="text-lg font-work-sans">Auctions</p>
+          </div>
+          <div class="col-span-1">
+            <h1 class="text-4xl font-oxanium font-bold">12k+</h1>
+            <p class="text-lg font-work-sans">Creators</p>
+          </div>
         </div>
       </div>
     </div>

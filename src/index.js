@@ -18,4 +18,30 @@ $(function () {
       mobileMenuEl.removeClass('menu-open').addClass('menu-close');
     }
   });
+
+  const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+
+    slidesPerView: 1,
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-after',
+      prevEl: '.swiper-before',
+    },
+
+    breakpoints: {
+      680: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+
+      1280: {
+        slidesPerView: 3,
+        spaceBetween: 50,
+      },
+    },
+  });
 });

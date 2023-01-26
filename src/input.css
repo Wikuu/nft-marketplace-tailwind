@@ -2,20 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-/* .test {
-    @apply bg-red-500;
-} */
-
 .wrapper {
-  overflow-x: hidden;
+  @apply relative w-full overflow-x-hidden min-h-screen py-4;
 }
 
 .menu-close {
-  right: -75%;
+  @apply -right-3/4;
 }
 
 .menu-open {
-  right: 0;
+  @apply right-0;
 }
 
 .navbar {
@@ -68,4 +64,61 @@
 
 .hero-section-image-bid-button {
   @apply bg-yellow text-purple border border-yellow px-10 font-bold text-lg font-work-sans hover:bg-purple hover:border-purple hover:text-yellow ease-in-out duration-500;
+}
+
+.live-auctions-title {
+  @apply text-3xl text-white font-oxanium font-bold z-10 relative w-fit before:content-[''] before:absolute before:top-1/2 before:-left-4 before:w-14 before:h-14 before:bg-auction-purple before:border-2 before:border-solid before:border-auction-purple before:rounded-full before:transform before:-translate-y-1/2 before:-z-10;
+}
+
+.sponsors-wrapper {
+  @apply grid grid-cols-4 gap-4 align-top justify-items-stretch;
+}
+
+.sponsor {
+  @apply col-span-2 md:col-span-1 justify-self-center;
+}
+
+.swiper {
+  width: 100%;
+  height: 620px;
+  position: initial;
+}
+
+.slide-card {
+  @apply w-full h-full p-6 bg-art-purple;
+}
+
+.art-card-top {
+  @apply h-4/6 bg-cover bg-center bg-no-repeat relative;
+}
+
+.art-timer {
+  @apply absolute bottom-0 left-0 bg-art-linear-effect;
+}
+
+.art-timer-text {
+  @apply text-white font-work-sans text-lg px-9 py-3 font-semibold;
+}
+
+.art-card-bottom {
+  @apply h-2/6 mt-4;
+}
+
+.art-card-creator-text {
+  @apply text-white font-work-sans font-semibold text-left ml-2;
+}
+.art-card-creator-text > span {
+  @apply text-gray-400 font-medium text-sm;
+}
+
+.art-card-heart-icon {
+  @apply text-lg text-gray-400 mr-2 cursor-pointer;
+}
+
+.art-card-bid-button {
+  @apply text-white text-lg font-work-sans border border-bid-button-border w-full py-4 mt-4 font-semibold bg-bid-button-bg hover:border-bid-button-bg hover:bg-white hover:text-art-purple transition duration-500 ease-in-out;
+}
+
+.swiper-btn {
+  @apply mr-3 text-2xl bg-white text-purple w-10 h-10 rounded-full flex justify-center items-center;
 }

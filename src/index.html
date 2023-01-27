@@ -153,7 +153,7 @@
           <h1 class="live-auctions-title">Live Auctions</h1>
         </div>
 
-        <div class="w-full flex justify-end mt-16 pr-5 mb-4">
+        <div class="w-full flex justify-end mt-16 mb-4">
           <button class="swiper-before swiper-btn">
             <i class="fas fa-long-arrow-left"></i>
           </button>
@@ -163,7 +163,7 @@
         </div>
 
         <!-- Slider main container -->
-        <div class="swiper">
+        <div class="swiper" id="auctions-swiper">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
@@ -349,6 +349,231 @@
             >
               List them for sale
             </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Popular Collections Section -->
+      <div class="container mx-auto px-4 xl:px-0 mt-20 text-center relative">
+        <div class="w-full flex justify-center">
+          <h1 class="popular-collections-title">Popular Collections</h1>
+        </div>
+
+        <div class="w-full flex justify-end mt-16 mb-4">
+          <button class="swiper-before swiper-btn">
+            <i class="fas fa-long-arrow-left"></i>
+          </button>
+          <button class="swiper-after swiper-btn">
+            <i class="fas fa-long-arrow-right"></i>
+          </button>
+        </div>
+
+        <!-- Slider main container -->
+        <div class="swiper" id="collections-swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="slide-card">
+                <div
+                  class="collection-card-top bg-[url('/src/images/collection1.png')]"
+                ></div>
+                <div class="collection-card-bottom">
+                  <div class="grid grid-cols-2">
+                    <div class="col-span-1 flex justify-start items-center">
+                      <img
+                        src="./images/profile-img2.png"
+                        role="Profile Image"
+                      />
+                      <p class="art-card-creator-text">@wzard</p>
+                    </div>
+                    <div class="col-span-1 flex justify-end items-center">
+                      <p class="text-lg text-gray-400">ERC-721</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-card">
+                <div
+                  class="collection-card-top bg-[url('/src/images/collection2.png')]"
+                ></div>
+                <div class="collection-card-bottom">
+                  <div class="grid grid-cols-2">
+                    <div class="col-span-1 flex justify-start items-center">
+                      <img
+                        src="./images/profile-img2.png"
+                        role="Profile Image"
+                      />
+                      <p class="art-card-creator-text">@wzard</p>
+                    </div>
+                    <div class="col-span-1 flex justify-end items-center">
+                      <p class="text-lg text-gray-400">ERC-721</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-card">
+                <div
+                  class="collection-card-top bg-[url('/src/images/collection1.png')]"
+                ></div>
+                <div class="collection-card-bottom">
+                  <div class="grid grid-cols-2">
+                    <div class="col-span-1 flex justify-start items-center">
+                      <img
+                        src="./images/profile-img2.png"
+                        role="Profile Image"
+                      />
+                      <p class="art-card-creator-text">@wzard</p>
+                    </div>
+                    <div class="col-span-1 flex justify-end items-center">
+                      <p class="text-lg text-gray-400">ERC-721</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Explore by Categories Section -->
+      <div class="container mx-auto px-4 xl:px-0 mt-20 text-center relative">
+        <div class="w-full flex justify-center">
+          <h1 class="live-auctions-title">Explore By Categories</h1>
+        </div>
+
+        <div class="w-full flex justify-end mt-16 mb-4">
+          <button class="swiper-before swiper-btn">
+            <i class="fas fa-long-arrow-left"></i>
+          </button>
+          <button class="swiper-after swiper-btn">
+            <i class="fas fa-long-arrow-right"></i>
+          </button>
+        </div>
+
+        <!-- Slider main container -->
+        <div class="swiper" id="explore-swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="slide-card">
+                <div class="art-card-top bg-[url('/src/images/explore1.png')]">
+                  <div class="art-timer">
+                    <p class="art-timer-text">03:18:24</p>
+                  </div>
+                </div>
+                <div class="art-card-bottom">
+                  <div class="grid grid-cols-2">
+                    <div class="col-span-1 flex justify-start items-center">
+                      <img
+                        src="./images/profile-img3.png"
+                        role="Profile Image"
+                      />
+                      <p class="art-card-creator-text">
+                        Virtual Art <br />
+                        <span>by @wzard</span>
+                      </p>
+                    </div>
+                    <div class="col-span-1 flex justify-end items-center">
+                      <i class="far fa-heart art-card-heart-icon"></i>
+                      <p class="text-lg text-gray-400">92</p>
+                    </div>
+                  </div>
+
+                  <div class="flex justify-between align-middle mt-4">
+                    <h5 class="text-xl text-gray-400 font-work-sans">
+                      Current Bid
+                    </h5>
+                    <h2 class="text-2xl text-white font-oxanium font-semibold">
+                      4.89 ETH
+                    </h2>
+                  </div>
+
+                  <button class="art-card-bid-button">Place a bid</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-card">
+                <div class="art-card-top bg-[url('/src/images/explore2.png')]">
+                  <div class="art-timer">
+                    <p class="art-timer-text">03:18:24</p>
+                  </div>
+                </div>
+                <div class="art-card-bottom">
+                  <div class="grid grid-cols-2">
+                    <div class="col-span-1 flex justify-start items-center">
+                      <img
+                        src="./images/profile-img3.png"
+                        role="Profile Image"
+                      />
+                      <p class="art-card-creator-text">
+                        Virtual Art <br />
+                        <span>by @wzard</span>
+                      </p>
+                    </div>
+                    <div class="col-span-1 flex justify-end items-center">
+                      <i class="far fa-heart art-card-heart-icon"></i>
+                      <p class="text-lg text-gray-400">92</p>
+                    </div>
+                  </div>
+
+                  <div class="flex justify-between align-middle mt-4">
+                    <h5 class="text-xl text-gray-400 font-work-sans">
+                      Current Bid
+                    </h5>
+                    <h2 class="text-2xl text-white font-oxanium font-semibold">
+                      4.89 ETH
+                    </h2>
+                  </div>
+
+                  <button class="art-card-bid-button">Place a bid</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-card">
+                <div class="art-card-top bg-[url('/src/images/explore3.png')]">
+                  <div class="art-timer">
+                    <p class="art-timer-text">03:18:24</p>
+                  </div>
+                </div>
+                <div class="art-card-bottom">
+                  <div class="grid grid-cols-2">
+                    <div class="col-span-1 flex justify-start items-center">
+                      <img
+                        src="./images/profile-img3.png"
+                        role="Profile Image"
+                      />
+                      <p class="art-card-creator-text">
+                        Virtual Art <br />
+                        <span>by @wzard</span>
+                      </p>
+                    </div>
+                    <div class="col-span-1 flex justify-end items-center">
+                      <i class="far fa-heart art-card-heart-icon"></i>
+                      <p class="text-lg text-gray-400">92</p>
+                    </div>
+                  </div>
+
+                  <div class="flex justify-between align-middle mt-4">
+                    <h5 class="text-xl text-gray-400 font-work-sans">
+                      Current Bid
+                    </h5>
+                    <h2 class="text-2xl text-white font-oxanium font-semibold">
+                      4.89 ETH
+                    </h2>
+                  </div>
+
+                  <button class="art-card-bid-button">Place a bid</button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

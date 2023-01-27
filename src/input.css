@@ -78,7 +78,7 @@
   @apply col-span-2 md:col-span-1 justify-self-center;
 }
 
-.swiper {
+#auctions-swiper {
   width: 100%;
   height: 620px;
   position: initial;
@@ -125,4 +125,36 @@
 
 .dashed-line {
   @apply col-span-8 lg:col-span-1 w-0 h-36 border border-dashed border-purple-stroke m-auto relative after:absolute after:content-['♦'] after:-bottom-4 after:left-1/2 after:-translate-x-1/2 after:text-purple-stroke lg:-rotate-90;
+}
+
+.popular-collections-title {
+  @apply text-3xl text-white font-oxanium font-bold z-10 relative w-fit before:content-[''] before:absolute before:top-1/2 before:-left-4 before:w-14 before:h-14 before:bg-popular-red before:border-2 before:border-solid before:border-popular-red before:rounded-full before:transform before:-translate-y-1/2 before:-z-10;
+}
+
+.art-card-creator-text {
+  @apply text-white font-work-sans font-semibold text-left ml-2;
+}
+
+.art-card-creator-text > span {
+  @apply text-gray-400 font-medium text-sm;
+}
+
+#collections-swiper {
+  width: 100%;
+  height: 420px;
+  position: initial;
+}
+
+.collection-card-top {
+  @apply h-5/6 bg-cover bg-center bg-no-repeat relative;
+}
+
+.collection-card-bottom {
+  @apply h-1/6 mt-4;
+}
+
+#explore-swiper {
+  width: 100%;
+  height: 620px;
+  position: initial;
 }

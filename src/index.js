@@ -19,7 +19,59 @@ $(function () {
     }
   });
 
-  const swiper = new Swiper('.swiper', {
+  const swiper = new Swiper('#auctions-swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+
+    slidesPerView: 1,
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-after',
+      prevEl: '.swiper-before',
+    },
+
+    breakpoints: {
+      680: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+
+      1280: {
+        slidesPerView: 3,
+        spaceBetween: 50,
+      },
+    },
+  });
+
+  const swiper2 = new Swiper('#collections-swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+
+    slidesPerView: 1,
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-after',
+      prevEl: '.swiper-before',
+    },
+
+    breakpoints: {
+      680: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+
+      1280: {
+        slidesPerView: 3,
+        spaceBetween: 50,
+      },
+    },
+  });
+
+  const swiper3 = new Swiper('#explore-swiper', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,

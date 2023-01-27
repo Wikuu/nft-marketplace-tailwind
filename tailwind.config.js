@@ -16,6 +16,7 @@ module.exports = {
         'bid-button-border': '#BCB39A',
         'bid-button-bg': 'rgba(233, 215, 167, 0.1);',
         'purple-stroke': '#794187',
+        'popular-red': '#E03054',
       },
       fontFamily: {
         'work-sans': ['Work Sans', 'sans-serif'],

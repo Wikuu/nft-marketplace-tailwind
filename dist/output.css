@@ -653,6 +653,10 @@ video {
   gap: 1rem;
 }
 
+.gap-6 {
+  gap: 1.5rem;
+}
+
 .gap-y-8 {
   row-gap: 2rem;
 }
@@ -792,6 +796,11 @@ video {
   line-height: 2rem;
 }
 
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -802,6 +811,14 @@ video {
 
 .font-semibold {
   font-weight: 600;
+}
+
+.font-thin {
+  font-weight: 100;
+}
+
+.font-normal {
+  font-weight: 400;
 }
 
 .capitalize {
@@ -826,6 +843,11 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-gray-500 {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -1402,6 +1424,45 @@ video {
   width: 100%;
   height: 620px;
   position: initial;
+}
+
+.creator-card {
+  grid-column: span 2 / span 2;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  --tw-bg-opacity: 1;
+  background-color: rgb(48 32 52 / var(--tw-bg-opacity));
+  padding: 1.5rem;
+  --tw-shadow: inset 2px 0px 0px #E03054;
+  --tw-shadow-colored: inset 2px 0px 0px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+@media (min-width: 768px) {
+  .creator-card {
+    grid-column: span 1 / span 1;
+  }
+}
+
+.creator-card-text {
+  margin-left: 0.75rem;
+  font-family: Work Sans, sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.vertical-line {
+  margin-left: auto;
+  height: 100%;
+  width: 0px;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+  background-color: transparent;
 }
 
 @media (min-width: 1024px) {

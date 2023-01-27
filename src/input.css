@@ -158,3 +158,15 @@
   height: 620px;
   position: initial;
 }
+
+.creator-card {
+  @apply col-span-2 md:col-span-1 bg-creator-purple flex justify-start items-center p-6 shadow-creator-card-shadow;
+}
+
+.creator-card-text {
+  @apply text-xl text-white font-semibold font-work-sans ml-3;
+}
+
+.vertical-line {
+  @apply w-0 h-full bg-transparent border border-white ml-auto;
+}

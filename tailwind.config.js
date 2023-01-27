@@ -17,6 +17,7 @@ module.exports = {
         'bid-button-bg': 'rgba(233, 215, 167, 0.1);',
         'purple-stroke': '#794187',
         'popular-red': '#E03054',
+        'creator-purple': '#302034',
       },
       fontFamily: {
         'work-sans': ['Work Sans', 'sans-serif'],
@@ -28,6 +29,9 @@ module.exports = {
       backgroundImage: {
         'art-linear-effect':
           'linear-gradient(125.33deg, #8613A5 18.61%, rgba(250, 250, 250, 0.65) 137.4%);',
+      },
+      boxShadow: {
+        'creator-card-shadow': 'inset 2px 0px 0px #E03054',
       },
     },
   },

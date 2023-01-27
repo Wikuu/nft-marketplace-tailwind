@@ -15,6 +15,7 @@ module.exports = {
         'art-linear-2': '#FAFAFA',
         'bid-button-border': '#BCB39A',
         'bid-button-bg': 'rgba(233, 215, 167, 0.1);',
+        'purple-stroke': '#794187',
       },
       fontFamily: {
         'work-sans': ['Work Sans', 'sans-serif'],

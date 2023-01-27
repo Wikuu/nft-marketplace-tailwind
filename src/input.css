@@ -122,3 +122,7 @@
 .swiper-btn {
   @apply mr-3 text-2xl bg-white text-purple w-10 h-10 rounded-full flex justify-center items-center;
 }
+
+.dashed-line {
+  @apply col-span-8 lg:col-span-1 w-0 h-36 border border-dashed border-purple-stroke m-auto relative after:absolute after:content-['♦'] after:-bottom-4 after:left-1/2 after:-translate-x-1/2 after:text-purple-stroke lg:-rotate-90;
+}
